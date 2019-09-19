@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import Playlist from './Playlist'
 
 const PlaylistCollection = (props) => {
-  const [selectedPlaylistId, setSelectedPlaylistId] = useState(null)
+  let selectedPlaylistId = props.selectedPlaylistId
+  let setSelectedPlaylistId = props.setSelectedPlaylistId
 
   const playlists = props.playlists.map((playlist) => {
 
