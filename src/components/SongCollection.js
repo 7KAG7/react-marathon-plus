@@ -15,8 +15,6 @@ const SongCollection = (props) => {
     }
   }
 
-  
-
   const songs = props.songs.map((song) => {
 
     const handleClick = () => {
